@@ -7,7 +7,7 @@ import PublishedAs from "@/components/PublishedAs";
 import Footer from "@/components/Footer";
 import Figure from "@/components/Figure";
 
-import PipelineDiagram from "@/components/pipeline/PipelineDiagram";
+import ArchitectureFigure from "@/components/pipeline/ArchitectureFigure";
 import DatasetDonut from "@/components/charts/DatasetDonut";
 import AugmentationGrid from "@/components/charts/AugmentationGrid";
 import ThresholdExplorer from "@/components/charts/ThresholdExplorer";
@@ -45,7 +45,7 @@ export default function Home() {
 
       <StageSection
         stage={byId["architecture"]}
-        visual={<Figure caption="Click any block to inspect that stage of the pipeline."><PipelineDiagram /></Figure>}
+        visual={<Figure caption="Digitized, interactive version of Fig. 1 — hover or tap any block."><ArchitectureFigure /></Figure>}
       />
       <StageSection
         stage={byId["fisher-attention"]}

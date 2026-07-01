@@ -48,7 +48,7 @@ export const team: TeamMember[] = [
   },
   {
     name: "Aniruddha Majumder",
-    role: "Co-Author",
+    role: "Lead Author",
     photo: "/team/aniruddha.png",
     links: [
       { label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/author/37088236560" },
@@ -57,7 +57,7 @@ export const team: TeamMember[] = [
   {
     name: "Dr. Md Mehedi Hasan",
     role: "Supervisor",
-    photo: "/team/mehedi.png",
+    photo: "/team/Mehedi.png",
     links: [
       { label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/author/37085388512" },
     ],
