@@ -2,6 +2,8 @@ import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import ProgressRail from "@/components/ProgressRail";
 import StageSection from "@/components/StageSection";
+import Team from "@/components/Team";
+import PublishedAs from "@/components/PublishedAs";
 import Footer from "@/components/Footer";
 import Figure from "@/components/Figure";
 
@@ -96,6 +98,9 @@ export default function Home() {
         stage={byId["conclusion"]}
         visual={<Roadmap />}
       />
+
+      <PublishedAs />
+      <Team />
 
       <Footer />
     </main>

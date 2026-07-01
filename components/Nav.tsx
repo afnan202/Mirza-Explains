@@ -44,6 +44,18 @@ export default function Nav() {
             >
               Results
             </a>
+            <a
+              href="#publication"
+              className="focus-ring rounded-full px-3 py-2 text-xs text-bone/60 transition hover:text-bone"
+            >
+              Publication
+            </a>
+            <a
+              href="#team"
+              className="focus-ring rounded-full px-3 py-2 text-xs text-bone/60 transition hover:text-bone"
+            >
+              Team
+            </a>
           </div>
         </div>
       </div>
@@ -81,6 +93,28 @@ export default function Nav() {
                   <span className="font-display text-xl">{s.title}</span>
                 </motion.a>
               ))}
+              <motion.a
+                href="#publication"
+                onClick={() => setOpen(false)}
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: stages.length * 0.03 }}
+                className="focus-ring flex items-baseline gap-3 rounded-xl px-3 py-3 text-bone/80 transition hover:bg-bone/5 hover:text-bone"
+              >
+                <span className="font-mono text-xs text-bone/35">·</span>
+                <span className="font-display text-xl">Publication</span>
+              </motion.a>
+              <motion.a
+                href="#team"
+                onClick={() => setOpen(false)}
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: (stages.length + 1) * 0.03 }}
+                className="focus-ring flex items-baseline gap-3 rounded-xl px-3 py-3 text-bone/80 transition hover:bg-bone/5 hover:text-bone"
+              >
+                <span className="font-mono text-xs text-bone/35">·</span>
+                <span className="font-display text-xl">Team</span>
+              </motion.a>
             </nav>
           </motion.div>
         )}

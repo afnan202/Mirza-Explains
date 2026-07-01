@@ -29,6 +29,65 @@ export const meta = {
   ],
 };
 
+export type TeamMember = {
+  name: string;
+  role: string;
+  affiliation?: string;
+  photo: string;
+  links?: { label: string; url: string }[];
+};
+
+export const team: TeamMember[] = [
+  {
+    name: "Mirza Afnan Islam",
+    role: "Lead Author",
+    photo: "/team/afnan.png",
+    links: [
+      { label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/author/484577762238585" },
+    ],
+  },
+  {
+    name: "Aniruddha Majumder",
+    role: "Co-Author",
+    photo: "/team/aniruddha.png",
+    links: [
+      { label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/author/37088236560" },
+    ],
+  },
+  {
+    name: "Dr. Md Mehedi Hasan",
+    role: "Supervisor",
+    photo: "/team/mehedi.png",
+    links: [
+      { label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/author/37085388512" },
+    ],
+  },
+];
+
+export const publication = {
+  title:
+    "IG-CNN: An Information-Geometric Model for Automated Knee Osteoporosis Diagnosis from X-ray Images",
+  venue: "2026 5th International Conference on Electrical, Computer & Telecommunication Engineering (ICECTE)",
+  location: "Rajshahi, Bangladesh",
+  dateOfConference: "29–31 January 2026",
+  addedToXplore: "16 March 2026",
+  publisher: "IEEE",
+  doi: "10.1109/ICECTE69292.2026.11429443",
+  doiUrl: "https://doi.org/10.1109/ICECTE69292.2026.11429443",
+  abstractUrl: "https://ieeexplore.ieee.org/abstract/document/11429443",
+  accuracy: "89.92%",
+  kappa: "0.8194",
+  bibtex: `@INPROCEEDINGS{islam2026igcnn,
+  author={Islam, Mirza Afnan and Majumder, Aniruddha and Hasan, Md Mehedi},
+  booktitle={2026 5th International Conference on Electrical, Computer \\& Telecommunication Engineering (ICECTE)},
+  title={{IG-CNN}: An Information-Geometric Model for Automated Knee Osteoporosis Diagnosis from X-ray Images},
+  year={2026},
+  address={Rajshahi, Bangladesh},
+  publisher={IEEE},
+  doi={10.1109/ICECTE69292.2026.11429443}
+}`,
+};
+
 export const stages: Stage[] = [
   {
     id: "introduction",
